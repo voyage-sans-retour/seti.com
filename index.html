@@ -3,10 +3,12 @@
     <head>
         <title>seti.com</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <script src="music.js"></script>
         <h1>Welcome</h1>
         <p>to seti's corner of the internet</p>
 
@@ -98,6 +100,23 @@
                 <a href="https://www.goodreads.com/user/show/187272419-s-e-t-i">goodreads</a>
             </div>
             <div id="message-image" class="image-container"></div>
+        </div>
+
+        <!--This will be the music player-->
+        <h1>Now Playing</h1>
+        <div id="music-player">
+            <div id="song-title">
+                <div id="song-name">Song</div>
+                <div id="song-artist">Artist</div>
+            <div>
+
+            <input id="slider" type="range" />
+            
+            <div id="music-controls">
+                <i id="prev-song" class="fa-solid fa-backward-step"></i>
+                <i id="play-song" class="fa-solid fa-circle-play"></i>
+                <i id="next-song" class="fa-solid fa-forward-step"></i>
+            </div>
         </div>
     </body>
 </html>

@@ -2,6 +2,7 @@ body {
     background-color:rgb(0, 0, 0);
     color: azure;
     font-family: "courier new";
+    padding: 3em;
 }
 
 h1, h2, p {
@@ -12,21 +13,88 @@ h1:hover, h2:hover {
     color:rgb(109, 177, 241);
 }
 
-img {
-    width: 20vh;
-    height: 20vh;
-    padding: 3% 3%;
-    display: block;
-    margin: 0 auto;
+strong:hover {
+    color:rgb(109, 177, 241);
 }
 
-.dropdown {
+/* add same margin bottom */
+img {
+    width: 30vh;
+    height: 30vh;
+    padding: 3% 3%;
+    display: block;
+    margin: auto;
+    margin-bottom: 30vh;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 2px lightblue;
+}
+
+/* dropdown */
+details {
     text-align: center;
     font-style: italic;
 }
 
+summary {
+    margin-bottom: 1em;
+}
+
+summary:hover {
+    color:rgb(109, 177, 241);
+}
+
+/* form - figure out how to center it (flexbox, align vertically? */
+
+fieldset {
+    border: none;
+}
+
+textarea::placeholder {
+    color: rgb(88, 155, 218);
+}
+
+textarea {
+    width: 100%;
+    color: rgb(88, 155, 218);
+}
+
+/* maybe change font? */
+#submit-button {
+    height: 2em;
+    width: 15%;
+    background-color: rgb(42, 49, 68);
+    color: rgb(170, 198, 224);
+    font-family: "courier new";
+    border: none;  
+    margin-left: 42.5%;
+    margin-top: 1vh;
+}
+
+#submit-button:hover {
+    color: azure;
+}
+
+a {
+    color: rgb(109, 177, 241);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 5% 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* blurbs */
 .blurb {
     margin-bottom: 30vh;
+}
+
+.blurb:last-of-type {
+    margin-bottom: 0;
 }
 
 .blurb p {
@@ -38,12 +106,60 @@ img {
     width: 15%;
     height: 10%;
     margin: unset;
-}
+} 
 
 .image-container {
     display: flex;
     justify-content: center;
 }
+
+/* music player */
+
+#music-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-style: italic;
+}
+
+#music-controls {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+#music-controls i {
+    padding: 1em;
+}
+
+#song-name, #song-artist {
+    margin-bottom: 2vh;
+}
+
+#slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    border: 1px solid white;
+    border-radius: 4px;
+    accent-color: white;
+}
+
+#slider:hover, #prev-song:hover, #next-song:hover, #play-song:hover {
+    accent-color: rgb(109, 177, 241);
+    color: rgb(109, 177, 241);
+}
+
+/* #controls-and-title {
+    display: flex;
+    justify-content:first baseline;
+    flex-direction:row;
+} */
+
 
 /* about blurb */
 /* figure out how to make blurbs ALIGNED next to each other */
