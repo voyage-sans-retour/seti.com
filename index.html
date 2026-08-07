@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--TODO: format tracklist
+-add new favorites section and gifs
+-make sure links open in new tab
+-nav bar
+-clean up code-->
 <html lang="en">
     <head>
         <title>seti.com</title>
@@ -8,7 +13,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <script src="music.js"></script>
         <h1>Welcome</h1>
         <p>to seti's corner of the internet</p>
 
@@ -56,7 +60,7 @@
             <div id="favorites-text" class="text-container">
                 <h2>My favorites</h2>
 
-                <p><strong>Favorite movies:</strong> Secret World of Arriety, Spirited Away, Princess Mononoke, Dead Poet's Society</p>
+                <p><strong>Favorite movies:</strong> Secret World of Arriety, Spirited Away, Princess Mononoke, Dead Poets' Society</p>
 
                 <div class="image-container">
                     <img class="interest-image" src="https://media1.tenor.com/m/3-UjQHHYyJ0AAAAC/studio-ghibli.gif" alt="arriety-gif" />
@@ -92,7 +96,7 @@
             <div id="message-text" class="text-container">
                 <fieldset>
                     <form> <!--figure out how to send info-->
-                        <textarea rows="5" cols="50" placeholder="do you have something silly to say?"></textarea>
+                        <textarea rows="5" cols="55" placeholder="do you have something silly to say?"></textarea>
                         <input type="submit" value="SUBMIT" id="submit-button">
                     </form>
                 </fieldset>
@@ -118,5 +122,22 @@
                 <i id="next-song" class="fa-solid fa-forward-step"></i>
             </div>
         </div>
+
+        <details class="tracklist">
+            <summary>Track List</summary>
+            <option>Garnet ~Kindan no Sono E~ - Malice Mizer</option>
+            <option>True Blue - Luna Sea</option>
+            <option>SADNESS ~I know the reason for her sadness~ - Malice Mizer</option>
+            <option>You and I Forever, Love is Here - Björn Andrésen</option>
+            <option>Syunikiss - Malice Mizer</option>
+            <option>Mizerable - Gackt</option>
+            <option>Transylvania - Malice Mizer</option>
+            <option>Bela Lugosi's Dead - Bauhaus</option>
+            <option>22194 - Takahiro Obata</option>
+            <option>Watashi wa ame - inabakumori, cover of Nightcord at 25:00</option>
+        </details>
+
+        <script src="music.js"></script>
     </body>
 </html>
+
