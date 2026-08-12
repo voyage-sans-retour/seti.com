@@ -1,10 +1,35 @@
-/* TO DO: find a way to center submit button better */
+/* TO DO: find a way to center submit button better, style scrollbar */
 
 body {
     background-color:rgb(0, 0, 0);
     color: azure;
     font-family: "courier new";
     padding: 3em;
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 60px;  
+}
+
+.directory {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.directory li a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(109, 177, 241);
+}
+
+.directory li a:hover {
+    text-decoration: underline;
 }
 
 h1, h2, p {
@@ -25,7 +50,12 @@ img {
     padding: 3% 3%;
     display: block;
     margin: auto;
-    margin-bottom: 30vh;
+    margin-bottom: 20vh;
+}
+
+hr {
+    margin-bottom: 10vh;
+    height: 0px;
 }
 
 img:hover {
@@ -77,7 +107,7 @@ textarea {
     color: azure;
 }
 
-a {
+.contact-links {
     color: rgb(109, 177, 241);
     text-decoration: none;
     display: block;
@@ -91,7 +121,7 @@ a:hover {
 
 /* blurbs */
 .blurb {
-    margin-bottom: 30vh;
+    margin-bottom: 20vh;
 }
 
 .blurb:last-of-type {
