@@ -1,4 +1,4 @@
-//TODO: change icon when paused, credit tut
+/* Thank you to this tutorial by Kenny Yip for teaching me how to make this: https://www.youtube.com/watch?v=APjb5Er03UE */
 
 const songName = document.getElementById("song-name");
 const songArtist = document.getElementById("song-artist");
@@ -7,8 +7,6 @@ const songSlider = document.getElementById("slider");
 const playButton = document.getElementById("play-song");
 const nextButton = document.getElementById("next-song");
 const backButton = document.getElementById("prev-song");
-
-//TODO: update song list, names, and files
 
 const songs= [
     {
@@ -88,8 +86,6 @@ nextButton.addEventListener ("click", function () {
 playButton.addEventListener ("click", function () {
     if (!audio.paused) {
         audio.pause();
-        //figure out how to change button
-        playButton.class = "fa-solid fa-circle-pause";
     }
     else {
         audio.play();

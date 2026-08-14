@@ -1,11 +1,63 @@
-/* TO DO: find a way to center submit button better, style scrollbar */
-
 body {
     background-color:rgb(0, 0, 0);
     color: azure;
     font-family: "courier new";
     padding: 3em;
 }
+
+h1, h2, p {
+    text-align: center;
+}
+
+h1:hover, h2:hover {
+    color:rgb(109, 177, 241);
+}
+
+strong:hover {
+    color:rgb(109, 177, 241);
+}
+
+img {
+    width: 30vh;
+    height: 30vh;
+    padding: 3% 3%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20vh;
+}
+
+hr {
+    margin-bottom: 10vh;
+    background-color: black;
+    height: 0;
+    border: none;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 2px lightblue;
+}
+
+/** scrollbar **/
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+    margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(26, 82, 136);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(109, 177, 241);
+}
+
+/** nav bar **/
 
 nav {
     width: 80%;
@@ -32,37 +84,8 @@ nav {
     text-decoration: underline;
 }
 
-h1, h2, p {
-    text-align: center;
-}
-
-h1:hover, h2:hover {
-    color:rgb(109, 177, 241);
-}
-
-strong:hover {
-    color:rgb(109, 177, 241);
-}
-
-img {
-    width: 30vh;
-    height: 30vh;
-    padding: 3% 3%;
-    display: block;
-    margin: auto;
-    margin-bottom: 20vh;
-}
-
-hr {
-    margin-bottom: 10vh;
-    height: 0px;
-}
-
-img:hover {
-    box-shadow: 0 0 2px 2px lightblue;
-}
-
 /* dropdown */
+
 details {
     text-align: center;
     font-style: italic;
@@ -76,36 +99,7 @@ summary:hover {
     color:rgb(109, 177, 241);
 }
 
-fieldset {
-    border: none;
-}
-
-textarea::placeholder {
-    color: rgb(88, 155, 218);
-}
-
-textarea {
-    width: 65%;
-    display: block;
-    margin: auto;
-    color: rgb(88, 155, 218);
-}
-
-#submit-button {
-    height: 2em;
-    width: 15%;
-    min-width: 60px;
-    background-color: rgb(42, 49, 68);
-    color: rgb(170, 198, 224);
-    font-family: "courier new";
-    border: none;  
-    margin-left: 42.5%;
-    margin-top: 1vh;
-}
-
-#submit-button:hover {
-    color: azure;
-}
+/** links */ 
 
 .contact-links {
     color: rgb(109, 177, 241);
@@ -113,6 +107,15 @@ textarea {
     display: block;
     text-align: center;
     margin: 5% 0;
+    font-style: normal;
+}
+
+#github-link, #goodreads-link {
+    display: inline;
+}
+
+footer {
+    margin-top: 20vh; 
 }
 
 a:hover {
@@ -122,10 +125,6 @@ a:hover {
 /* blurbs */
 .blurb {
     margin-bottom: 20vh;
-}
-
-.blurb:last-of-type {
-    margin-bottom: 0;
 }
 
 .blurb p {

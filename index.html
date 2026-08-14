@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<!--TODO: format tracklist
--add new favorites section and gifs
--make sure links open in new tab
--adding a place for submitted form
--footer for seeing code on github
--clean up code-->
 <html lang="en">
     <head>
         <title>seti.com</title>
@@ -14,22 +8,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <!-- this will be the directory -->
-        <div class="nav-bar">
-            <nav>
-                <ul class="directory">
-                    <li><a href="#link-about">About</a></li>
-                    <li>✴</li>
-                    <li><a href="#link-favorites">Favorites</a></li>
-                    <li>✴</li>
-                    <li><a href="#link-projects">Projects</a></li>
-                    <li>✴</li>
-                    <li><a href="#link-message">Contact</a></li>
-                    <li>✴</li>
-                    <li><a href="#link-music">Music</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav>
+            <ul class="directory">
+                <li><a href="#link-about">About</a></li>
+                <li>✴</li>
+                <li><a href="#link-favorites">Favorites</a></li>
+                <li>✴</li>
+                <li><a href="#link-projects">Projects</a></li>
+                <li>✴</li>
+                <li><a href="#link-music">Music</a></li>
+            </ul>
+        </nav>
 
         <h1>Welcome</h1>
         <p>to seti's corner of the internet</p>
@@ -40,8 +29,6 @@
 
         <hr id="link-about">
 
-
-        <!--This will be my about blurb-->
         <div id="about-container" class="blurb">
             <div id="about-text" class="text-container">
                 <h2>Who am I?</h2>
@@ -68,13 +55,11 @@
                     <p>Français: ★★☆☆☆</p>
                     <p>عربی: ★☆☆☆☆</p>
                 </details>
-
             </div>
         </div>
 
         <hr id="link-favorites">
 
-        <!--This will be my favorites blurb-->
         <div id="favorites-container" class="blurb">
             <div id="favorites-text" class="text-container">
                 <h2>My favorites</h2>
@@ -88,7 +73,13 @@
                 </div>
 
                 <p><strong>Favorite book:</strong> The Cosmic Connection by Carl Sagan</p>
-                <p><strong>Favorite author:</strong> Carl Sagan</p>
+                <p><strong>Favorite mangas:</strong> Witch Hat Atelier, A Witch in Mongolia</p>
+
+                <div class="image-container">
+                    <img class="interest-image" src="https://media1.tenor.com/m/ChgZqfYdGYAAAAAC/agott-witch-hat-atelier.gif" />
+                    <img class="interest-image" src="https://i.pinimg.com/1200x/44/ac/30/44ac30a87c377c72ad40216960d313bb.jpg" />
+                </div>
+
                 <p><strong>Favorite characters:</strong> Ishmael, Agott Arklaum, Ena Shinonome</p>
                 <p><strong>Favorite band:</strong> Malice Mizer</p>
 
@@ -100,37 +91,17 @@
         
         <hr id="link-projects">
 
-        <!--This will be my projects blurb-->
         <div id="project-container" class="blurb">
             <div id="project-text" class="text-container">
                 <h2>My Projects</h2>
-                <p>Nothing to see here yet... Check back later!</p>
+                <p>Nothing to see here yet...</p>
             </div>
 
             <div id="project-image" class="image-container"></div>
         </div>
 
-        <hr id="link-message">
-
-        <!--This will be my message blurb-->
-        <h2>Send me a message!</h2>
-        <div id="message-container" class="blurb">
-            <div id="message-text" class="text-container">
-                <fieldset>
-                    <form> <!--figure out how to send info-->
-                        <textarea rows="5" cols="55" placeholder="do you have something silly to say?"></textarea>
-                        <input type="submit" value="SUBMIT" id="submit-button">
-                    </form>
-                </fieldset>
-                <a class="contact-links"  href="https://github.com/voyage-sans-retour">github</a>
-                <a class="contact-links" href="https://www.goodreads.com/user/show/187272419-s-e-t-i">goodreads</a>
-            </div>
-            <div id="message-image" class="image-container"></div>
-        </div>
-
         <hr id="link-music">
 
-        <!--This will be the music player-->
         <h1>Now Playing</h1>
         <div id="music-player">
             <div id="song-title">
@@ -160,6 +131,12 @@
             <option>22194 - Takahiro Obata</option>
             <option>Watashi wa ame - inabakumori, cover of Nightcord at 25:00</option>
         </details>
+
+        <footer>
+            <p><a class="contact-links" id="github-link" href="https://github.com/voyage-sans-retour/seti.com" target="_blank">github</a>,
+            <a class="contact-links" id="goodreads-link" href="https://github.com/voyage-sans-retour/seti.com" target="_blank">goodreads</a></p>
+            <a class="contact-links" id="code-link" href="https://github.com/voyage-sans-retour/seti.com" target="_blank">this site's code</a>
+        </footer>
 
         <script src="music.js"></script>
     </body>
