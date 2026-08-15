@@ -1,3 +1,8 @@
+/* Planet Uranus - https://www.cursors-4u.com/cursor/planet-uranus */
+* {
+  cursor: url('https://cdn.cursors-4u.net/previews/planet-uranus-57859afa-32.webp') 32 32, auto !important;
+}
+
 body {
     background-color:rgb(0, 0, 0);
     color: azure;
@@ -31,10 +36,6 @@ hr {
     background-color: black;
     height: 0;
     border: none;
-}
-
-img:hover {
-    box-shadow: 0 0 2px 2px lightblue;
 }
 
 /** scrollbar **/
@@ -110,8 +111,14 @@ summary:hover {
     font-style: normal;
 }
 
-#github-link, #goodreads-link {
+#github-link, #goodreads-link, #stardance-link {
     display: inline;
+    margin-bottom: 0;
+}
+
+#code-link {
+    margin-bottom: 0;
+    margin-top: 2vh;
 }
 
 footer {
@@ -141,6 +148,10 @@ a:hover {
 .image-container {
     display: flex;
     justify-content: center;
+}
+
+.blurb:last-of-type {
+    margin-bottom: 40vh;
 }
 
 /* music player */
@@ -184,4 +195,8 @@ a:hover {
 
 .tracklist option {
     margin-bottom: 2vh;
+}
+
+.tracklist {
+    margin-bottom: 20vh;
 }

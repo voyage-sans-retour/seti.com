@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--TODO: fix hover, possibly fix no auto audio-->
     <head>
         <title>seti.com</title>
         <link rel="stylesheet" href="style.css">
@@ -10,13 +11,13 @@
     <body>
         <nav>
             <ul class="directory">
+                <li><a href="#link-music">Music</a></li>
+                <li>✴</li>
                 <li><a href="#link-about">About</a></li>
                 <li>✴</li>
                 <li><a href="#link-favorites">Favorites</a></li>
                 <li>✴</li>
                 <li><a href="#link-projects">Projects</a></li>
-                <li>✴</li>
-                <li><a href="#link-music">Music</a></li>
             </ul>
         </nav>
 
@@ -26,6 +27,38 @@
         <figure>
             <img src="https://64.media.tumblr.com/771200b42acb629691e9cfc7b016c61c/28baa4d11e3ef160-90/s1280x1920/9a2cbef963cc9da39c6c1f3d25570292e5106d33.jpg" alt="andromeda-galaxy" />
         </figure>
+
+        <hr id="link-music">
+
+        <h1>Now Playing</h1>
+        <div id="music-player">
+            <div id="song-title">
+                <div id="song-name">Song</div>
+                <div id="song-artist">Artist</div>
+            <div>
+
+            <input id="slider" type="range" />
+            
+            <div id="music-controls">
+                <i id="prev-song" class="fa-solid fa-backward-step"></i>
+                <i id="play-song" class="fa-solid fa-circle-play"></i>
+                <i id="next-song" class="fa-solid fa-forward-step"></i>
+            </div>
+        </div>
+
+        <details class="tracklist">
+            <summary>Track List</summary>
+            <option>Garnet ~Kindan no Sono E~ - Malice Mizer</option>
+            <option>True Blue - Luna Sea</option>
+            <option>SADNESS ~I know the reason for her sadness~ - Malice Mizer</option>
+            <option>You and I Forever, Love is Here - Björn Andrésen</option>
+            <option>Syunikiss - Malice Mizer</option>
+            <option>Mizerable - Gackt</option>
+            <option>Transylvania - Malice Mizer</option>
+            <option>Bela Lugosi's Dead - Bauhaus</option>
+            <option>22194 - Takahiro Obata</option>
+            <option>Watashi wa ame - inabakumori, cover of Nightcord at 25:00</option>
+        </details>
 
         <hr id="link-about">
 
@@ -100,42 +133,12 @@
             <div id="project-image" class="image-container"></div>
         </div>
 
-        <hr id="link-music">
-
-        <h1>Now Playing</h1>
-        <div id="music-player">
-            <div id="song-title">
-                <div id="song-name">Song</div>
-                <div id="song-artist">Artist</div>
-            <div>
-
-            <input id="slider" type="range" />
-            
-            <div id="music-controls">
-                <i id="prev-song" class="fa-solid fa-backward-step"></i>
-                <i id="play-song" class="fa-solid fa-circle-play"></i>
-                <i id="next-song" class="fa-solid fa-forward-step"></i>
-            </div>
-        </div>
-
-        <details class="tracklist">
-            <summary>Track List</summary>
-            <option>Garnet ~Kindan no Sono E~ - Malice Mizer</option>
-            <option>True Blue - Luna Sea</option>
-            <option>SADNESS ~I know the reason for her sadness~ - Malice Mizer</option>
-            <option>You and I Forever, Love is Here - Björn Andrésen</option>
-            <option>Syunikiss - Malice Mizer</option>
-            <option>Mizerable - Gackt</option>
-            <option>Transylvania - Malice Mizer</option>
-            <option>Bela Lugosi's Dead - Bauhaus</option>
-            <option>22194 - Takahiro Obata</option>
-            <option>Watashi wa ame - inabakumori, cover of Nightcord at 25:00</option>
-        </details>
-
         <footer>
+            <p><em>thank you for visiting</em></p>
             <p><a class="contact-links" id="github-link" href="https://github.com/voyage-sans-retour/seti.com" target="_blank">github</a>,
-            <a class="contact-links" id="goodreads-link" href="https://github.com/voyage-sans-retour/seti.com" target="_blank">goodreads</a></p>
-            <a class="contact-links" id="code-link" href="https://github.com/voyage-sans-retour/seti.com" target="_blank">this site's code</a>
+            <a class="contact-links" id="goodreads-link" href="https://www.goodreads.com/user/show/187272419-s-e-t-y-a" target="_blank">goodreads</a>, 
+            <a class="contact-links" id="stardance-link" href="https://stardance.hackclub.com/@seti/projects" target="_blank">stardance</a>
+            <a class="contact-links" id="code-link" href="https://github.com/voyage-sans-retour/seti.com" target="_blank">this site's code</a></p>
         </footer>
 
         <script src="music.js"></script>
