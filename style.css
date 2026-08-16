@@ -72,7 +72,7 @@ nav {
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .directory li a {
