@@ -1,10 +1,8 @@
 /* Planet Uranus - https://www.cursors-4u.com/cursor/planet-uranus */
 * {                  
     font-family: 'Geist Pixel', 'Courier New';
-}
-
-* {
-  cursor: url('https://cdn.cursors-4u.net/previews/planet-uranus-57859afa-32.webp') 32 32, auto !important;
+    cursor: url('https://cdn.cursors-4u.net/previews/planet-uranus-57859afa-32.webp') 32 32, auto !important;
+    scroll-behavior: smooth;
 }
 
 body {
